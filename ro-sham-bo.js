@@ -1,14 +1,15 @@
+let choice = Math.floor(Math.random() * 3);
 
 //The choice variable will be a random number generator to represent the computers choice.
 
-function getComputerChoice() {
+function getComputerChoice(choice) {
         
         if(choice == 0){
         choice = "scissors";
         } else if (choice == 1){
-                choice = "scissors";
+                choice = "rock"
         }else{
-                choice="scissors"
+                choice ="paper"
         }
                         
         
@@ -17,7 +18,7 @@ function getComputerChoice() {
 //The function converts the choice to our Ro Sham Bo strings.
 
 let playerSelection = "Rock";
-let computerSelection = getComputerChoice;
+let computerSelection = getComputerChoice(choice);
 
 
 
